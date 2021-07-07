@@ -21,6 +21,8 @@ Snap
 sudo snap install --classic code
 ```
 
+**OR**
+
 Debian / Ubuntu
 ```shell script
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
@@ -31,6 +33,8 @@ sudo apt install apt-transport-https
 sudo apt update
 sudo apt install code
 ```
+
+**OR**
 
 RHEL / Fedora / CentOS
 ```shell script
@@ -51,6 +55,8 @@ Snap
 sudo snap install docker
 ```
 
+**OR**
+
 Debian / Ubuntu
 
 ```shell script
@@ -68,6 +74,8 @@ echo \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
+
+**OR**
 
 RHEL / Fedora / CentOS
 
