@@ -12,7 +12,7 @@ on your remote system.
 
 ## Setting up prerequisites
 
-#### Installing Visual Studio Code
+### Installing Visual Studio Code
 
 Select one of the methods below based on your preferences and operating system.
 
@@ -45,7 +45,7 @@ sudo dnf install code
 ```
 
 
-#### Installing Docker
+### Installing Docker
 
 Select one of the methods below based on your preferences and operating system.
 
