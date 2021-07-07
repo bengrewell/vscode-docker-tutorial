@@ -14,6 +14,8 @@ on your remote system.
 
 #### Installing Visual Studio Code
 
+Select one of the methods below based on your preferences and operating system.
+
 Snap
 ```shell script
 sudo snap install --classic code
@@ -40,6 +42,8 @@ sudo dnf install code
 
 
 #### Installing Docker
+
+Select one of the methods below based on your preferences and operating system.
 
 Snap
 
