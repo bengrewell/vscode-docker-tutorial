@@ -44,7 +44,6 @@ sudo dnf check-update
 sudo dnf install code
 ```
 
-
 ### Installing Docker
 
 Select one of the methods below based on your preferences and operating system.
@@ -296,33 +295,17 @@ do the following.
 3. Set to `ssh://<user>@<address>`
 
 You should setup SSH key based authentication for this so that you don't need to use user/password. To do this follow
-these steps
-
-1. If you don't have a ssh keypair generate one. If you do skip this
-    ```shell script
-    ssh-keygen
-    <select the defaults>
-    ```
-
-2. Copy the ssh key to the remote system
-    ```shell script
-    ssh-copy-id <user>@<address>
-    ```
-
-3. Test
-    ```shell script
-    ssh <user>@<address> whoami
-    ```
-   
-This should run the command without prompting for a password and return your username. If this works then
-you should be all setup for using a remote docker container. 
+these steps. If you don't already have a keypair run `ssh-keygen` and follow the prompts. If you do then you just need
+to install it on the remote system. To do that run `ssh-copy-id <user>@<address>` replacing user and address with your 
+username and address. Once that is done you should be able to verify it works by running `ssh <user>@<address> whoami`
+and verifying that it outputs your username without prompting for a password.
 
 If you return to the `Visual Studio Code` window on the docker tab you should now see the containers and images
 on your remote system instead of your local system. If you right click on your running container and select `Attach
  Visual Studio Code` you will get a new window attached to that remote container. 
 
-*You may get an error about Visual Studio Code not being able to connect to the container.* 
-*If you do then just click `Chose Container` and select your container again.* 
+If get an error about Visual Studio Code not being able to connect to the container then just click `Choose Container` 
+on the error prompt and select your container again. 
  
-You might need to click on the extensions and install the Python extension into the container. Once this is done you
+You also likely will need to click on the extensions tab and install the Python extension into the container. Once this is done you
 should be able to develop against the remote container as if you were using it locally.
